@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=main, initial-scale=1.0">
+    <title>Unico Hogar</title>
+    <link rel="shortcut icon" href="../assets/imagenes/Favicon/casa marron.jpg">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Courgette&family=Dancing+Script:wght@600;700&family=Oswald&display=swap"
+        rel="stylesheet">
+    <!--link css-->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navegador">
+            <a href="../index.html"><img id="avatar" src="../assets/imagenes/Favicon/casa marron.jpg"
+                    title="inicio"></a>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./tips.html">Tips</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Envianos tu consulta</h1>
+        <form class="fondo">
+            <fieldset>
+                <h2>Tus datos</h2>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" class="input" type="text" placeholder="Ingrese su nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input id="apellido" class="input" type="text" placeholder="Ingrese su apellido">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input id="email" class="input" type="email" name="" placeholder="Ingrese su E-mail">
+                </div>
+                <div>
+                    <h3 class="input">Sexo:</h3>
+                </div>
+                <div>
+                    <label class="input" for="sexo_h">Hombre</label>
+                    <input type="radio" name="sexo" value="hombre" id="sexo_h" />
+
+
+                    <label class="input" for="sexo_f">Mujer</label>
+                    <input type="radio" name="sexo" value="mujer" id="sexo_f" />
+
+                    <label class="input" for="sexo_o">Otro</label>
+                    <input type="radio" name="sexo" value="otro" id="sexo_o">
+                </div>
+                <div>
+                    <label class="input" for="pais">Pais de origen</label>
+                    <select class="input" name="pais" id="pais">
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="consulta">Escribinos tu consulta</label>
+                </div>
+                <div>
+                    <textarea class="input" name="" id="consulta" cols="30" rows="10"></textarea>
+                </div>
+
+                <input class="input boton" type="submit" value="Enviar consulta">
+                <input class="input boton" type="submit" value="Resetear">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p><a href="../pages/nosotros.html">Quieres saber sobre Unico Hogar?</a></p>
+        <p><a href="../pages/nosotros.html">Quieres saber más sobre Unico Hogar?</a></p>
+        <p><img src="../assets/imagenes/facebook.svg" alt="facebook"></p>
+        <p><img src="../assets/imagenes/instagram.svg" alt="instagram"></p>
+    </footer>
+
+</body>
+
+</html>
