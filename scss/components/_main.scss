@@ -1,0 +1,15 @@
+$letras: #585751;
+$font-family_1: Georgia, 'Times New Roman', Times, serif;
+$fondos: rgba(212, 192, 136, 0.337);
+
+.inicioLetraChica {
+	padding: 40px;
+	text-align: center;
+	font-family: $font-family_1;
+	font-size: 25px;
+	padding: 3%;
+	background-color: map-get($paleta, fondos);
+	display: block;
+	color: map-get($paleta, letras);
+	font-size: medium;
+}

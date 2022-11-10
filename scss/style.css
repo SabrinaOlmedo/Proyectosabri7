@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 10px;
+  background-color: rgb(212, 192, 136);
+}
+
+.navegador ul {
+  list-style-type: none;
+  text-align: left;
+}
+.navegador li {
+  display: inline;
+  text-align: center;
+  margin: 0 40px 0 0;
+  margin-left: 20px;
+}
+.navegador li a {
+  padding: 5px 5px 2px 5px;
+  text-align: center;
+  background-color: rgb(212, 192, 136);
+  color: #ffffff;
+  border: none;
+  font-size-adjust: initial;
+  font-size: x-large;
+}
+.navegador li a:hover {
+  background-color: rgba(173, 153, 83, 0.23);
+  padding-bottom: value;
+  color: rgb(154, 135, 79);
+}
+
+@media screen and (max-width: 992px) {
+  .navegador li {
+    display: inline-flex;
+    position: static;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10px 0 0;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .navbarContainer {
+    height: auto;
+  }
+  .navbarContainer nav {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbarContainer nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbarContainer nav a {
+    display: flex;
+    justify-content: center;
+  }
+  .navegador li {
+    display: inline;
+    text-align: center;
+    margin: 0;
+    margin-left: 0px;
+  }
+}
+#avatar {
+  position: absolute;
+  left: 80%;
+  top: 2px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  #avatar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    top: 2px;
+  }
+}
+@media screen and (max-width: 420px) {
+  #avatar {
+    position: static;
+  }
+}
+.tituloInicio {
+  color: #585751;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Cinzel", serif;
+  font-family: "Courgette", cursive;
+  font-family: "Dancing Script", cursive;
+  font-family: "Oswald", sans-serif;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.cartaInicio {
+  height: 200px;
+  background-color: rgba(212, 192, 136, 0.337);
+}
+
+.inicio {
+  padding: 40px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: block;
+  color: #585751;
+}
+
+@media screen and (max-width: 420px) {
+  .tituloInicio {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+h1 {
+  color: #585751;
+  font-size: 3rem;
+  text-align: center;
+  background-color: rgba(212, 192, 136, 0.337);
+  font-family: "Cinzel", serif;
+  font-family: "Courgette", cursive;
+  font-family: "Dancing Script", cursive;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+}
+
+.inicioLetraChica {
+  padding: 40px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+  padding: 3%;
+  background-color: rgba(212, 192, 136, 0.337);
+  display: block;
+  color: #585751;
+  font-size: medium;
+}
+
+#tarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(212, 192, 136, 0.337);
+}
+
+.card {
+  width: 20%;
+  margin: 20px 20px 20px 20px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.7411764706);
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+.card img {
+  width: 60%;
+}
+
+.text__card {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #585751;
+  padding: 25px;
+}
+
+.btn {
+  font-size: 1rem;
+  color: #585751;
+  background-color: rgba(212, 192, 136, 0.834);
+  border-radius: 3px;
+  border: 2px solid rgb(131, 123, 106);
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .card {
+    flex-direction: column;
+  }
+}
+form fieldset {
+  background-color: rgba(149, 141, 126, 0.786);
+  border-radius: 5px;
+  width: 60%;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  margin: 0% 20% 0% 20%;
+  font-family: "Cinzel", serif;
+  font-family: "Courgette", cursive;
+  font-family: "Dancing Script", cursive;
+  font-family: "Oswald", sans-serif;
+  color: #585751;
+}
+
+.fondo {
+  background-color: rgba(212, 192, 136, 0.337);
+  padding: 2%;
+}
+
+.input {
+  width: 50%;
+  padding: 2px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  min-height: 70px;
+  max-height: 100px;
+  min-width: 50%;
+  max-width: 80%;
+}
+
+.boton:hover {
+  transition: 1s;
+  background-color: rgba(118, 117, 108, 0.6352941176);
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  form fieldset {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .fondo {
+    padding: 0%;
+  }
+  form fieldset {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+  }
+}
+.imagenes img {
+  margin: 20px;
+  width: 300px;
+  height: 170px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  border: 3px solid rgb(131, 123, 106);
+}
+.imagenes img:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+h2 {
+  color: #585751;
+  font-size: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgb(72, 70, 67);
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  gap: 7%;
+  padding: 10px;
+}
+footer a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+footer img {
+  width: 40px;
+}
+footer:hover {
+  transform: scale(1.1);
+  transition: 3s;
+}
+
+@media screen and (max-width: 420px) {
+  footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

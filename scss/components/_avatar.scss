@@ -1,0 +1,25 @@
+#avatar {
+	position: absolute;
+	left: 80%;
+	top: 2px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+	#avatar {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+		left: 50%;
+		top: 2px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	#avatar {
+		position: static;
+	}
+}

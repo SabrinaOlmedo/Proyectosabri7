@@ -1,0 +1,36 @@
+$font-family_1: 'Cinzel', serif;
+$font-family_2: 'Courgette', cursive;
+$font-family_3: 'Dancing Script', cursive;
+$font-family_4: 'Oswald', sans-serif;
+$font-family_5: Georgia, 'Times New Roman', Times, serif;
+
+.tituloInicio {
+	color: map-get($paleta, letras);
+	text-align: center;
+	font-size: 60px;
+	font-family: $font-family_1;
+	font-family: $font-family_2;
+	font-family: $font-family_3;
+	font-family: $font-family_4;
+	padding: 10px;
+	text-decoration: underline;
+}
+.cartaInicio {
+	height: 200px;
+	background-color: map-get($paleta, fondos);
+}
+.inicio {
+	padding: 40px;
+	text-align: center;
+	font-family: $font-family_5;
+	display: block;
+	color: map-get($paleta, letras);
+}
+
+@media screen and (max-width: 420px) {
+	.tituloInicio {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+}

@@ -1,0 +1,9 @@
+$font-family_1: sans-serif;
+
+h2 {
+	color: map-get($paleta, letras);
+	font-size: 2rem;
+	text-align: center;
+	font-family: $font-family_1;
+	text-decoration: underline;
+}

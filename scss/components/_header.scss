@@ -1,0 +1,79 @@
+$letra_navegador:#ffffff;
+$color_1: rgb(154, 135, 79);
+$fondo_navegador:rgb(212, 192, 136);
+$background-color_1: rgba(173, 153, 83, 0.23);
+
+header {
+	padding: 10px;
+	background-color: map-get($paleta, fondo_navegador);
+}
+
+.navegador {
+	ul {
+		list-style-type: none;
+		text-align: left;
+	}
+
+	li {
+		display: inline;
+		text-align: center;
+		margin: 0 40px 0 0;
+		margin-left: 20px;
+
+		a {
+			padding: 5px 5px 2px 5px;
+			text-align: center;
+			background-color: $fondo_navegador;
+			color: $letra_navegador;
+			border: none;
+			font-size-adjust: initial;
+			font-size: x-large;
+
+			&:hover {
+				background-color: $background-color_1;
+				padding-bottom: value;
+				color: $color_1;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.navegador li {
+		display: inline-flex;
+		position: static;
+		justify-content: center;
+		text-align: center;
+		margin: 0 10px 0 0;
+		margin-left: 30px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.navbarContainer {
+		height: auto;
+	}
+
+	.navbarContainer nav {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navbarContainer nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navbarContainer nav a {
+		display: flex;
+		justify-content: center;
+	}
+
+	.navegador li {
+		display: inline;
+		text-align: center;
+		margin: 0;
+		margin-left: 0px;
+	}
+}
