@@ -1,6 +1,4 @@
-$letra_navegador:#ffffff;
 $color_1: rgb(154, 135, 79);
-$fondo_navegador:rgb(212, 192, 136);
 $background-color_1: rgba(173, 153, 83, 0.23);
 
 header {
@@ -23,8 +21,8 @@ header {
 		a {
 			padding: 5px 5px 2px 5px;
 			text-align: center;
-			background-color: $fondo_navegador;
-			color: $letra_navegador;
+			background-color: map-get($paleta, fondo_navegador);
+			color: map-get($paleta, letra_navegador);
 			border: none;
 			font-size-adjust: initial;
 			font-size: x-large;

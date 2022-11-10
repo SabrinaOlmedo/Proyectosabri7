@@ -1,9 +1,8 @@
 $color_1: rgb(0, 0, 0);
 $font-family_1: Arial, Helvetica, sans-serif;
-$footer: rgb(72, 70, 67);
 
 footer {
-	background-color: map-get($paleta,footer);
+	background-color: map-get($paleta, footer);
 	text-align: center;
 	position: relative;
 	display: flex;
